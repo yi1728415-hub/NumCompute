@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "numcompute"
-version = "0.1.0"
-description = "A scientific computing toolkit built with Python and NumPy."
+version = "0.2.0"
+description = "NumCompute (Assignment 2.1) and NumCompute-Stream, a decision-tree streaming ML framework (Assignment 2.2)."
 authors = [
     {name = "Hongyu Liu"},
     {name = "Yi Su"},
@@ -15,14 +15,15 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "numpy",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
-demo = ["jupyterlab>=4", "nbconvert>=7", "ipykernel>=6"]
+demo = ["jupyterlab>=4", "nbconvert>=7", "nbformat>=5", "ipykernel>=6"]
 
 [tool.setuptools.packages.find]
-include = ["numcompute*"]
+include = ["numcompute*", "numcompute_stream*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
