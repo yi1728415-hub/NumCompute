@@ -222,17 +222,17 @@ absolute times depend on the machine):
 
 | Comparison | Size | Speed-up of the vectorised version |
 |---|---|---|
-| Tree split search (one retrain) | 500 / 4000 buffered rows | about 90x / 127x |
-| Tree prediction | 1000 / 10000 rows | about 33x / 48x |
-| Running mean/variance | 100 000 rows in 100-row chunks | about 9x |
-| Confusion matrix | 30 classes | about 17x |
+| Tree split search (one retrain) | 500 / 4000 buffered rows | about 63x / 117x |
+| Tree prediction | 1000 / 10000 rows | about 16x / 21x |
+| Running mean/variance | 100 000 rows in 100-row chunks | about 7x |
+| Confusion matrix | 30 classes | about 12x |
 
 | buffer_size | retrains | prequential accuracy | ms per retrain |
 |---|---|---|---|
-| 100 | 80 | 0.746 | 2.4 |
-| 500 | 16 | 0.803 | 7.3 |
-| 2000 | 4 | 0.833 | 25 |
-| 4000 | 2 | 0.814 | 47 |
+| 100 | 80 | 0.746 | 2.1 |
+| 500 | 16 | 0.803 | 8.3 |
+| 2000 | 4 | 0.833 | 23.2 |
+| 4000 | 2 | 0.814 | 43.2 |
 
 ## Assignment 2.1
 
